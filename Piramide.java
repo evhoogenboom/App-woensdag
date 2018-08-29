@@ -2,9 +2,11 @@ import java.util.ArrayList;
 
 public class Piramide {
 	Kaart[][] piramide;
-	Deck deck = new Deck();
-	ArrayList cards = deck.deckAsList;
-	Kaart[][] makePiramid() {
+	
+	
+	Kaart[][] makePiramid(Deck deck) {
+		ArrayList cards = deck.deckAsList;
+		
 		Kaart[][] piramide = new Kaart[6][];
 		for(int i=0, j= 6;i<6;i++,j--) {
 			//piramide[i]=   (Kaart[]) cards.subList(0, j).toArray();
@@ -21,4 +23,6 @@ public class Piramide {
 		return piramide;
 			
 	}
+	
+	
 }
